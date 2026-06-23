@@ -1,8 +1,8 @@
 // --- src/components/Dashboard/Dashboard.jsx ---
+import { Link } from "react-router-dom";
 import "./Dashboard.css";
 
 const Dashboard = () => {
-  // Sample data
   const stats = [
     { label: "Total Jobs", value: "1,247", change: "+12%", up: true },
     { label: "Active Jobs", value: "18", change: "+3", up: true },
@@ -56,19 +56,18 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      {/* SIDEBAR */}
       <aside className="sidebar">
         <div className="sidebar-brand">
           <span>✦</span> FlowWarm
         </div>
         <nav className="sidebar-nav">
           <div className="nav-label">Main</div>
-          <a href="#" className="active">
+          <Link to="/" className="active">
             <i className="fas fa-home"></i> Dashboard
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/jobs">
             <i className="fas fa-clipboard-list"></i> Jobs
-          </a>
+          </Link>
           <a href="#">
             <i className="fas fa-users"></i> Clients
           </a>
@@ -95,9 +94,7 @@ const Dashboard = () => {
         </div>
       </aside>
 
-      {/* MAIN */}
       <main className="main">
-        {/* TOP BAR */}
         <div className="topbar">
           <div className="topbar-left">
             <h1>Dashboard</h1>
@@ -119,7 +116,6 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* STATS */}
         <div className="stats-grid">
           {stats.map((stat, i) => (
             <div className="stat-card" key={i}>
@@ -132,9 +128,7 @@ const Dashboard = () => {
           ))}
         </div>
 
-        {/* GRID: CHART + QUICK ACTIONS */}
         <div className="dashboard-grid">
-          {/* CHART CARD */}
           <div className="card">
             <div className="card-header">
               <h3>
@@ -144,9 +138,9 @@ const Dashboard = () => {
                 ></i>{" "}
                 Weekly Jobs
               </h3>
-              <a href="#" className="more">
+              <Link to="/jobs" className="more">
                 View all
-              </a>
+              </Link>
             </div>
             <div className="chart-placeholder">
               {chartData.map((d, i) => (
@@ -175,7 +169,6 @@ const Dashboard = () => {
             </div>
           </div>
 
-          {/* QUICK ACTIONS */}
           <div className="card">
             <div className="card-header">
               <h3>
@@ -207,7 +200,6 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* RECENT JOBS */}
         <div className="card">
           <div className="card-header">
             <h3>
@@ -217,9 +209,9 @@ const Dashboard = () => {
               ></i>{" "}
               Recent Jobs
             </h3>
-            <a href="#" className="more">
+            <Link to="/jobs" className="more">
               View all jobs
-            </a>
+            </Link>
           </div>
           <ul className="job-list">
             {recentJobs.map((job, i) => (
