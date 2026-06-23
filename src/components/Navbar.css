@@ -1,0 +1,74 @@
+/* --- src/components/Navbar.css --- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition:
+    background var(--transition),
+    box-shadow var(--transition);
+}
+.navbar.scrolled {
+  background: var(--earth);
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.18);
+}
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.navbar-logo {
+  font-family: var(--ff-display);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: -0.02em;
+}
+.navbar-logo span {
+  color: var(--clay);
+}
+.navbar-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+.navbar-links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  transition: color var(--transition);
+}
+.navbar-links a:hover {
+  color: var(--white);
+}
+.navbar-cta {
+  padding: 10px 24px;
+  font-size: 0.85rem;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  display: block;
+  transition: all var(--transition);
+}
+
+@media (max-width: 640px) {
+  .navbar-links {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}

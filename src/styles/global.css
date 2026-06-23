@@ -1,0 +1,136 @@
+/* --- global.css (only global settings: tokens, reset, typography, layout, utility classes) --- */
+/* ===== TOKENS ===== */
+:root {
+  --clay: #b45309; /* warm amber-brown — primary CTA */
+  --earth: #78350f; /* deep walnut — headings, nav */
+  --stone: #292524; /* near-black — body text */
+  --sand: #fef3c7; /* warm cream — backgrounds */
+  --linen: #fffbeb; /* off-white — section alt bg */
+  --mortar: #d6c9b6; /* greige — borders, dividers */
+  --white: #ffffff;
+
+  --ff-display: "Playfair Display", Georgia, serif;
+  --ff-body: "Manrope", "Inter", system-ui, sans-serif;
+
+  --radius: 4px;
+  --transition: 0.25s ease;
+}
+
+/* ===== RESET ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--stone);
+  background: var(--linen);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ff-display);
+  line-height: 1.15;
+  color: var(--earth);
+}
+
+.eyebrow {
+  font-family: var(--ff-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin-bottom: 0.75rem;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 96px 0;
+}
+
+/* ===== BUTTON (global utility) ===== */
+.btn {
+  display: inline-block;
+  padding: 14px 36px;
+  font-family: var(--ff-body);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius);
+  transition: all var(--transition);
+}
+
+.btn-primary {
+  background: var(--clay);
+  color: var(--white);
+}
+.btn-primary:hover {
+  background: var(--earth);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+.btn-outline:hover {
+  background: var(--white);
+  color: var(--earth);
+}
+
+/* ===== RESPONSIVE (global breakpoints) ===== */
+@media (max-width: 900px) {
+  .hero-stats {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  section {
+    padding: 72px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
