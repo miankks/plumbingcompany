@@ -12,110 +12,110 @@ const JobsPage = () => {
   const allJobs = [
     {
       id: 1,
-      title: "Kitchen Sink Leak Repair",
-      client: "The Martinez Family",
+      title: "Läckreparation av diskbänk",
+      client: "Martinez Familj",
       status: "completed",
       date: "2026-06-22",
-      amount: "$245",
+      amount: "2245kr",
       priority: "Medium",
     },
     {
       id: 2,
-      title: "Water Heater Installation",
-      client: "Oak Street Residences",
+      title: "Installation av varmvattenberedare",
+      client: "Sollentuna",
       status: "in-progress",
       date: "2026-06-22",
-      amount: "$1,200",
+      amount: "12000kr",
       priority: "High",
     },
     {
       id: 3,
-      title: "Drain Rooter Service",
-      client: "The Johnsons",
+      title: "Avloppsrooterservice",
+      client: "The Faustinas",
       status: "pending",
       date: "2026-06-21",
-      amount: "$380",
+      amount: "3800kr",
       priority: "Low",
     },
     {
       id: 4,
-      title: "Emergency Pipe Burst Repair",
+      title: "Akut reparation av rörsprängningar",
       client: "Downtown Cafe",
       status: "emergency",
       date: "2026-06-22",
-      amount: "$890",
+      amount: "8900kr",
       priority: "Critical",
     },
     {
       id: 5,
-      title: "Bathroom Fixture Upgrade",
-      client: "The Parkers",
+      title: "Uppgradering av badrumsarmatur",
+      client: "The Mians",
       status: "in-progress",
       date: "2026-06-20",
-      amount: "$650",
+      amount: "6500kr",
       priority: "Medium",
     },
     {
       id: 6,
-      title: "Sewer Line Camera Inspection",
-      client: "Maple Ave Properties",
+      title: "Kamerainspektion av avloppsledning",
+      client: "Odenplan Stockholm",
       status: "completed",
       date: "2026-06-19",
-      amount: "$420",
+      amount: "2000kr",
       priority: "Low",
     },
     {
       id: 7,
-      title: "Water Softener System Install",
-      client: "The Wilsons",
+      title: "Installation av vattenavhärdningssystem",
+      client: "Östermalm",
       status: "pending",
       date: "2026-06-23",
-      amount: "$1,800",
+      amount: "18000kr",
       priority: "High",
     },
     {
       id: 8,
-      title: "Gas Line Emergency Repair",
-      client: "The Andersons",
+      title: "Nödreparation av gasledning",
+      client: "Anderssons",
       status: "emergency",
       date: "2026-06-23",
-      amount: "$1,350",
+      amount: "13500kr",
       priority: "Critical",
     },
     {
       id: 9,
-      title: "Faucet Replacement Service",
-      client: "The Millers",
+      title: "Kranarbyteservice",
+      client: "någon klient",
       status: "completed",
       date: "2026-06-18",
-      amount: "$175",
+      amount: "1750kr",
       priority: "Low",
     },
     {
       id: 10,
-      title: "Water Main Repair",
-      client: "City Heights Complex",
+      title: "Vattenhuvudreparation",
+      client: "Södertälje",
       status: "in-progress",
       date: "2026-06-23",
-      amount: "$2,400",
+      amount: "24000kr",
       priority: "High",
     },
     {
       id: 11,
-      title: "Toilet Installation & Repair",
-      client: "The Harrisons",
+      title: "Toalettinstallation & reparation",
+      client: "Harrissons",
       status: "pending",
       date: "2026-06-24",
-      amount: "$320",
+      amount: "3200kr",
       priority: "Medium",
     },
     {
       id: 12,
-      title: "Hydro-Jetting Service",
+      title: "Hydro-Jetting-tjänst",
       client: "Riverside Apartments",
       status: "completed",
       date: "2026-06-17",
-      amount: "$560",
+      amount: "5600kr",
       priority: "Medium",
     },
   ];
@@ -243,12 +243,12 @@ const JobsPage = () => {
       <main className="main jobs-page">
         <div className="jobs-header">
           <div className="jobs-header-left">
-            <h1>All Jobs</h1>
-            <p className="jobs-subtitle">Manage and track all plumbing jobs</p>
+            <h1>Alla Jobb</h1>
+            <p className="jobs-subtitle">Hantera och spåra alla VVS-jobb</p>
           </div>
           <div className="jobs-header-right">
             <button className="btn btn-primary">
-              <i className="fas fa-plus"></i> New Job
+              <i className="fas fa-plus"></i> Nytt jobb
             </button>
           </div>
         </div>
@@ -256,25 +256,25 @@ const JobsPage = () => {
         <div className="jobs-stats-bar">
           <div className="stat-item">
             <span className="stat-number">{allJobs.length}</span>
-            <span className="stat-label">Total Jobs</span>
+            <span className="stat-label">Totalt antal jobb</span>
           </div>
           <div className="stat-item">
             <span className="stat-number">
               {allJobs.filter((j) => j.status === "in-progress").length}
             </span>
-            <span className="stat-label">In Progress</span>
+            <span className="stat-label">Pågår</span>
           </div>
           <div className="stat-item">
             <span className="stat-number">
               {allJobs.filter((j) => j.status === "emergency").length}
             </span>
-            <span className="stat-label">Emergency</span>
+            <span className="stat-label">Nödsituation</span>
           </div>
           <div className="stat-item">
             <span className="stat-number">
               {allJobs.filter((j) => j.status === "completed").length}
             </span>
-            <span className="stat-label">Completed</span>
+            <span className="stat-label">Avslutad</span>
           </div>
         </div>
 
@@ -306,13 +306,13 @@ const JobsPage = () => {
             >
               {statusOptions.map((opt) => (
                 <option key={opt} value={opt}>
-                  {opt === "All" ? "All Statuses" : getStatusLabel(opt)}
+                  {opt === "All" ? "Alla statusar" : getStatusLabel(opt)}
                 </option>
               ))}
             </select>
           </div>
           <span className="jobs-count">
-            {filteredAndSortedJobs.length} jobs found
+            {filteredAndSortedJobs.length} jobb hittade
           </span>
         </div>
 
@@ -321,7 +321,7 @@ const JobsPage = () => {
             <thead>
               <tr>
                 <th onClick={() => handleSort("title")} className="sortable">
-                  Job Title
+                  Arbetstitel
                   {sortField === "title" && (
                     <i
                       className={`fas fa-sort-${sortDirection === "asc" ? "up" : "down"}`}
@@ -329,7 +329,7 @@ const JobsPage = () => {
                   )}
                 </th>
                 <th onClick={() => handleSort("client")} className="sortable">
-                  Client
+                  Klient
                   {sortField === "client" && (
                     <i
                       className={`fas fa-sort-${sortDirection === "asc" ? "up" : "down"}`}
@@ -345,7 +345,7 @@ const JobsPage = () => {
                   )}
                 </th>
                 <th onClick={() => handleSort("priority")} className="sortable">
-                  Priority
+                  Prioritet
                   {sortField === "priority" && (
                     <i
                       className={`fas fa-sort-${sortDirection === "asc" ? "up" : "down"}`}
@@ -353,7 +353,7 @@ const JobsPage = () => {
                   )}
                 </th>
                 <th onClick={() => handleSort("date")} className="sortable">
-                  Date
+                  Datum
                   {sortField === "date" && (
                     <i
                       className={`fas fa-sort-${sortDirection === "asc" ? "up" : "down"}`}
@@ -361,14 +361,14 @@ const JobsPage = () => {
                   )}
                 </th>
                 <th onClick={() => handleSort("amount")} className="sortable">
-                  Amount
+                  Belopp
                   {sortField === "amount" && (
                     <i
                       className={`fas fa-sort-${sortDirection === "asc" ? "up" : "down"}`}
                     ></i>
                   )}
                 </th>
-                <th>Actions</th>
+                <th>Åtgärder</th>
               </tr>
             </thead>
             <tbody>

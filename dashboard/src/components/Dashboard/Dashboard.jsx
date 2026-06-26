@@ -4,40 +4,40 @@ import "./Dashboard.css";
 
 const Dashboard = () => {
   const stats = [
-    { label: "Total Jobs", value: "1,247", change: "+12%", up: true },
-    { label: "Active Jobs", value: "18", change: "+3", up: true },
-    { label: "Revenue (MTD)", value: "$42,800", change: "+8%", up: true },
-    { label: "Avg. Rating", value: "4.9★", change: "+0.2", up: true },
+    { label: "Totalt antal jobb", value: "1,247", change: "+12%", up: true },
+    { label: "Aktiva jobb", value: "18", change: "+3", up: true },
+    { label: "Inkomst (MTD)", value: "428000kr", change: "+8%", up: true },
+    { label: "genomsnittliga betyg", value: "4.9★", change: "+0.2", up: true },
   ];
 
   const recentJobs = [
     {
-      title: "Kitchen Sink Leak",
-      client: "The Martinez Family",
+      title: "Läckreparation av diskbänk",
+      client: "Martinez Familj",
       status: "completed",
       date: "2h ago",
     },
     {
-      title: "Water Heater Install",
-      client: "Oak Street Residences",
+      title: "Installation av varmvattenberedare",
+      client: "Sollentuna",
       status: "in-progress",
       date: "4h ago",
     },
     {
-      title: "Drain Rooter Service",
-      client: "The Johnsons",
+      title: "Avloppsrooterservice",
+      client: "The Faustinas",
       status: "pending",
       date: "1d ago",
     },
     {
-      title: "Emergency Pipe Burst",
+      title: "Akut reparation av rörsprängningar",
       client: "Downtown Cafe",
       status: "emergency",
       date: "30m ago",
     },
     {
-      title: "Bathroom Fixture Update",
-      client: "The Parkers",
+      title: "Uppgradering av badrumsarmatur",
+      client: "The Mians",
       status: "in-progress",
       date: "3d ago",
     },
@@ -45,12 +45,12 @@ const Dashboard = () => {
 
   const chartData = [
     { day: "Mon", value: 4 },
-    { day: "Tue", value: 6 },
-    { day: "Wed", value: 3 },
-    { day: "Thu", value: 8 },
-    { day: "Fri", value: 5 },
-    { day: "Sat", value: 2 },
-    { day: "Sun", value: 1 },
+    { day: "Tis", value: 6 },
+    { day: "Ons", value: 3 },
+    { day: "Tur", value: 8 },
+    { day: "Fre", value: 5 },
+    { day: "Lör", value: 2 },
+    { day: "Sön", value: 1 },
   ];
   const maxValue = Math.max(...chartData.map((d) => d.value));
 
@@ -63,26 +63,26 @@ const Dashboard = () => {
         <nav className="sidebar-nav">
           <div className="nav-label">Main</div>
           <Link to="/" className="active">
-            <i className="fas fa-home"></i> Dashboard
+            <i className="fas fa-home"></i> Instrumentpanel
           </Link>
           <Link to="/jobs">
-            <i className="fas fa-clipboard-list"></i> Jobs
+            <i className="fas fa-clipboard-list"></i> Jobb
           </Link>
           <a href="#">
-            <i className="fas fa-users"></i> Clients
+            <i className="fas fa-users"></i> Kunder
           </a>
           <a href="#">
-            <i className="fas fa-calendar-alt"></i> Schedule
+            <i className="fas fa-calendar-alt"></i> Schema
           </a>
           <div className="nav-label">Business</div>
           <a href="#">
-            <i className="fas fa-chart-line"></i> Reports
+            <i className="fas fa-chart-line"></i> Rapporter
           </a>
           <a href="#">
-            <i className="fas fa-receipt"></i> Invoices
+            <i className="fas fa-receipt"></i> Fakturor
           </a>
           <a href="#">
-            <i className="fas fa-cog"></i> Settings
+            <i className="fas fa-cog"></i> Inställningar
           </a>
         </nav>
         <div className="sidebar-footer">
@@ -97,8 +97,8 @@ const Dashboard = () => {
       <main className="main">
         <div className="topbar">
           <div className="topbar-left">
-            <h1>Dashboard</h1>
-            <p>Welcome back, Mike — here's your plumbing overview</p>
+            <h1>Instrumentpanel</h1>
+            <p>Välkommen tillbaka, Faustina — här är din VVS-översikt</p>
           </div>
           <div className="topbar-right">
             <span className="date-badge">
@@ -122,7 +122,7 @@ const Dashboard = () => {
               <div className="stat-label">{stat.label}</div>
               <div className="stat-value">{stat.value}</div>
               <div className={`stat-change ${stat.up ? "up" : "down"}`}>
-                {stat.change} from last month
+                {stat.change} från förra månaden
               </div>
             </div>
           ))}
@@ -136,10 +136,10 @@ const Dashboard = () => {
                   className="fas fa-chart-bar"
                   style={{ color: "var(--clay)", marginRight: "8px" }}
                 ></i>{" "}
-                Weekly Jobs
+                Veckojobb
               </h3>
               <Link to="/jobs" className="more">
-                View all
+                Visa alla
               </Link>
             </div>
             <div className="chart-placeholder">
@@ -176,25 +176,25 @@ const Dashboard = () => {
                   className="fas fa-bolt"
                   style={{ color: "var(--clay)", marginRight: "8px" }}
                 ></i>{" "}
-                Quick Actions
+                Snabba åtgärder
               </h3>
             </div>
             <div className="quick-actions">
               <a href="#" className="quick-action">
                 <i className="fas fa-plus-circle"></i>
-                <span>New Job</span>
+                <span>Nytt jobb</span>
               </a>
               <a href="#" className="quick-action">
                 <i className="fas fa-user-plus"></i>
-                <span>Add Client</span>
+                <span>Lägg till klient</span>
               </a>
               <a href="#" className="quick-action">
                 <i className="fas fa-file-invoice"></i>
-                <span>Create Invoice</span>
+                <span>Skapa faktura</span>
               </a>
               <a href="#" className="quick-action">
                 <i className="fas fa-calendar-plus"></i>
-                <span>Schedule</span>
+                <span>Schema</span>
               </a>
             </div>
           </div>
@@ -207,10 +207,10 @@ const Dashboard = () => {
                 className="fas fa-clock"
                 style={{ color: "var(--clay)", marginRight: "8px" }}
               ></i>{" "}
-              Recent Jobs
+              Senaste jobb
             </h3>
             <Link to="/jobs" className="more">
-              View all jobs
+              Se alla jobb
             </Link>
           </div>
           <ul className="job-list">
