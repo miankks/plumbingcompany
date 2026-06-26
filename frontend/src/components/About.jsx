@@ -17,7 +17,7 @@ const About = () => {
             alt="Plumbing tools"
           />
           <div className="about-years-badge">
-            18 <small>Years</small>
+            12 <small>År</small>
           </div>
         </div>
         <div className="about-text">

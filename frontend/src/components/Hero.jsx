@@ -37,7 +37,7 @@ const Hero = () => {
           <div className="hero-stat-label">Genomsnittligt betyg</div>
         </div>
         <div className="hero-stat">
-          <div className="hero-stat-num">18</div>
+          <div className="hero-stat-num">12</div>
           <div className="hero-stat-label">År av förtroende</div>
         </div>
       </div>
