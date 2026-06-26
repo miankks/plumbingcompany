@@ -21,34 +21,34 @@ const About = () => {
           </div>
         </div>
         <div className="about-text">
-          <span className="eyebrow">About FlowWarm</span>
-          <h2>Plumbing you can trust, with a warm touch</h2>
+          <span className="eyebrow">Om Faustina</span>
+          <h2>Rörmokeri du kan lita på, med en varm touch</h2>
           <p>
-            We're a family-owned plumbing company dedicated to solving problems
-            with honesty, skill, and a friendly smile. From emergency repairs to
-            full installations, we treat every home like our own.
+            Vi är ett familjeägt VVS-företag som är dedikerat till att lösa problem med ärlighet, 
+            skicklighet och ett vänligt leende. Från akuta reparationer till 
+            fullständiga installationer behandlar vi varje hem som vårt eget.
           </p>
           <p>
-            Our team is licensed, insured, and trained in the latest techniques
-            — but we never forget that behind every pipe is a person who needs
-            clear answers and fair pricing.
+           Vårt team är licensierat, försäkrat och utbildat i de senaste teknikerna
+            — men vi glömmer aldrig att bakom varje rör finns en person som behöver tydliga
+           svar och rättvisa priser.
           </p>
           <div className="about-values">
             <div className="about-value">
               <span className="about-value-dot"></span>
-              Licensed & insured
+              Licensierad & försäkrad
             </div>
             <div className="about-value">
               <span className="about-value-dot"></span>
-              Upfront pricing
+              Prissättning i förskott
             </div>
             <div className="about-value">
               <span className="about-value-dot"></span>
-              Same-day service
+              Service samma dag
             </div>
             <div className="about-value">
               <span className="about-value-dot"></span>
-              100% satisfaction
+              100% tillfredsställelse
             </div>
           </div>
         </div>

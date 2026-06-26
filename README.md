@@ -1,6 +1,6 @@
-FlowWarm Plumbing · Complete Project Documentation
+Faustina Plumbing · Complete Project Documentation
 📋 Project Overview
-FlowWarm is a complete web application for a plumbing business, featuring a customer-facing landing page and an internal dashboard for job management. Built with a warm, inviting aesthetic that reflects the company's brand values of trust, craftsmanship, and approachable service.
+Faustina is a complete web application for a plumbing business, featuring a customer-facing landing page and an internal dashboard for job management. Built with a warm, inviting aesthetic that reflects the company's brand values of trust, craftsmanship, and approachable service.
 
 🚀 Features
 Customer-Facing Website
@@ -68,7 +68,7 @@ Mongoose - ODM for MongoDB
 
 📁 Project Structure
 
-flowwarm-plumbing/
+Faustina-plumbing/
 ├── index.html
 ├── vite.config.js
 ├── package.json
@@ -136,8 +136,8 @@ Installation
 Clone the repository
 
 bash
-git clone https://github.com/yourusername/flowwarm-plumbing.git
-cd flowwarm-plumbing
+git clone https://github.com/yourusername/Faustina-plumbing.git
+cd Faustina-plumbing
 Install dependencies
 
 bash
@@ -167,7 +167,7 @@ NODE_ENV=development
 
 # Database
 
-MONGODB_URI=mongodb://localhost:27017/flowwarm
+MONGODB_URI=mongodb://localhost:27017/Faustina
 
 # Email (for contact form)
 
@@ -312,11 +312,11 @@ Client communication history
 This project is proprietary and confidential. All rights reserved.
 
 👥 Team
-Design: FlowWarm Design Team
+Design: Faustina Design Team
 
 Development: Full-Stack Development Team
 
-Product Owner: FlowWarm Management
+Product Owner: Faustina Management
 
 🤝 Contributing
 Fork the repository
@@ -330,7 +330,7 @@ Push to branch (git push origin feature/AmazingFeature)
 Open a Pull Request
 
 📞 Support
-For support, email support@flowwarm.com or create an issue in the repository.
+For support, email support@Faustina.com or create an issue in the repository.
 
 🏆 Acknowledgments
 Font Awesome for icons
@@ -383,11 +383,11 @@ Build Trust - Professional, warm brand presence
 Scale Operations - Support business growth
 
 📞 Contact
-FlowWarm Plumbing
+Faustina Plumbing
 
-Website: flowwarm.com
+Website: Faustina.com
 
-Email: hello@flowwarm.com
+Email: hello@Faustina.com
 
 Phone: (555) 789-2026
 
@@ -397,6 +397,6 @@ Address: 456 Maple Avenue, Austin, TX
 Plumbing, Renovation, Construction, Home Services, React, Dashboard, Job Management, Customer Portal, Warm Design, Local Business, Construction Website, Plumbing Business, Contractor Management, Service Industry, Small Business, React Dashboard, CRM, Job Tracking, Project Management
 
 🙏 Thank You
-Thank you for your interest in the FlowWarm Plumbing project. We hope this documentation helps you understand, use, and extend the application effectively.
+Thank you for your interest in the Faustina Plumbing project. We hope this documentation helps you understand, use, and extend the application effectively.
 
 Built with ❤️ by the Mian

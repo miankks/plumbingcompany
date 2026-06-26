@@ -58,7 +58,7 @@ const Dashboard = () => {
     <div className="dashboard">
       <aside className="sidebar">
         <div className="sidebar-brand">
-          <span>✦</span> FlowWarm
+          <span>✦</span> Faustina
         </div>
         <nav className="sidebar-nav">
           <div className="nav-label">Main</div>

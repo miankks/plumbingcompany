@@ -26,11 +26,11 @@ const Contact = () => {
     <section className="contact" id="contact">
       <div className="container contact-inner">
         <div className="contact-info">
-          <span className="eyebrow">Get in touch</span>
-          <h2>We're here to help</h2>
+          <span className="eyebrow">Hör av dig</span>
+          <h2>Vi är här för att hjälpa till</h2>
           <p>
-            Call us for emergencies or fill out the form — we'll respond within
-            2 hours with a clear quote.
+            Ring oss vid nödsituationer eller fyll i formuläret – 
+            vi svarar inom 2 timmar med en tydlig offert.
           </p>
           <ul className="contact-details">
             <li>
@@ -43,7 +43,7 @@ const Contact = () => {
               <span className="contact-icon">
                 <i className="fas fa-envelope"></i>
               </span>
-              hello@flowwarm.com
+              hello@Faustina.com
             </li>
             <li>
               <span className="contact-icon">
@@ -56,7 +56,7 @@ const Contact = () => {
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-row">
             <div className="form-group">
-              <label htmlFor="name">Full name</label>
+              <label htmlFor="name">Fullständigt namn</label>
               <input
                 type="text"
                 id="name"
@@ -67,7 +67,7 @@ const Contact = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">E-post</label>
               <input
                 type="email"
                 id="email"
@@ -80,7 +80,7 @@ const Contact = () => {
           </div>
           <div className="form-row">
             <div className="form-group">
-              <label htmlFor="phone">Phone number</label>
+              <label htmlFor="phone">Telefonnummer</label>
               <input
                 type="tel"
                 id="phone"
@@ -90,31 +90,31 @@ const Contact = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="service">Service needed</label>
+              <label htmlFor="service">Service behövs</label>
               <select
                 id="service"
                 name="service"
                 value={formData.service}
                 onChange={handleChange}
               >
-                <option value="">Select a service</option>
-                <option value="Repair">Repair & Maintenance</option>
-                <option value="Drain">Drain & Sewer Cleaning</option>
+                <option value="">Välj en tjänst</option>
+                <option value="Repair">Reparation & Underhåll</option>
+                <option value="Drain">Avloppsrensning</option>
                 <option value="Installation">Installation</option>
-                <option value="Emergency">Emergency Service</option>
-                <option value="Other">Other</option>
+                <option value="Emergency">Räddningstjänst</option>
+                <option value="Other">Andra</option>
               </select>
             </div>
           </div>
           <div className="form-group">
-            <label htmlFor="message">Tell us about your plumbing issue</label>
+            <label htmlFor="message">Berätta om ditt VVS-problem</label>
             <textarea
               id="message"
               name="message"
               rows="4"
               value={formData.message}
               onChange={handleChange}
-              placeholder="Describe the problem, location, and urgency..."
+              placeholder="Beskriv problemet, platsen och brådskan..."
             ></textarea>
           </div>
           <button type="submit" className="form-submit" disabled={submitted}>

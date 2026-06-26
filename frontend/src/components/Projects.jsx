@@ -5,32 +5,37 @@ import "./Projects.css";
 const allProjects = [
   {
     id: 1,
-    title: "Kitchen Sink & Faucet Upgrade",
+    title: "Uppgradering av diskbänk och kran",
     category: "Kitchen",
+    tag: "Kök",
     img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format&fit=crop&q=60",
   },
   {
     id: 2,
-    title: "Bathroom Pipe Replacement",
+    title: "Byte av badrumsrör",
     category: "Bathroom",
+    tag: "Badrum",
     img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&auto=format&fit=crop&q=60",
   },
   {
     id: 3,
-    title: "Water Heater Installation",
+    title: "Installation av varmvattenberedare",
     category: "Installation",
+    tag: "Installation",
     img: "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&auto=format&fit=crop&q=60",
   },
   {
     id: 4,
-    title: "Drain Cleaning & Rooter",
+    title: "Avloppsrensning och rotborttagning",
     category: "Drain",
+    tag: "Dränare",
     img: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&auto=format&fit=crop&q=60",
   },
   {
     id: 5,
-    title: "Outdoor Spigot & Irrigation",
+    title: "Utomhuskran och bevattning",
     category: "Outdoor",
+    tag: "Utomhus",
     img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&auto=format&fit=crop&q=60",
   },
 ];
@@ -55,7 +60,7 @@ const Projects = () => {
     <section className="projects" id="projects">
       <div className="container">
         <div className="projects-header">
-          <h2>Recent plumbing projects</h2>
+          <h2>Senaste VVS-projekt</h2>
           <div className="filter-tabs">
             {categories.map((cat) => (
               <button
@@ -84,14 +89,14 @@ const Projects = () => {
                     <i className="fas fa-calendar-alt"></i> 2026
                   </span>
                   <span>
-                    <i className="fas fa-tag"></i> {project.category}
+                    <i className="fas fa-tag"></i> {project.tag}
                   </span>
                 </div>
               </div>
             </div>
           ))}
           {filtered.length === 0 && (
-            <div className="no-projects">No projects in this category yet.</div>
+            <div className="no-projects">Inga projekt i denna kategori ännu.</div>
           )}
         </div>
       </div>

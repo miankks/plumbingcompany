@@ -15,24 +15,24 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="container navbar-inner">
         <div className="navbar-logo">
-          <span>✦</span> FlowWarm
+          <span>✦</span> Faustina
         </div>
         <ul className="navbar-links">
           <li>
-            <a href="#services">Services</a>
+            <a href="#services">Tjänster</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects">Projekt</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about">Om</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Kontakt</a>
           </li>
         </ul>
         <a href="#contact" className="btn btn-primary navbar-cta">
-          Get a quote
+          Få en offert
         </a>
         <button className="hamburger" aria-label="Menu">
           <span></span>

@@ -9,36 +9,36 @@ const Hero = () => {
       <div className="hero-overlay"></div>
       <div className="container hero-content">
         <div className="hero-badge">
-          <i className="fas fa-wrench"></i> Licensed & insured
+          <i className="fas fa-wrench"></i> Licensierad och Försäkrad
         </div>
         <h1>
-          Plumbing that <em>flows</em> with warmth
+          VVS som <em>flödar</em> med varmt
         </h1>
         <p>
-          From leaky faucets to full repipes — we bring expert craftsmanship,
-          honest pricing, and a friendly touch to every job.
+          Från läckande kranar till kompletta omrörningar – vi erbjuder expertkunskap, 
+          ärliga priser och ett vänligt bemötande i varje jobb.
         </p>
         <div className="hero-actions">
           <a href="#projects" className="btn btn-primary">
-            See our work
+            Se vårt arbete
           </a>
           <a href="#contact" className="btn btn-outline">
-            Emergency service
+            Räddningstjänst
           </a>
         </div>
       </div>
       <div className="hero-stats">
         <div className="hero-stat">
           <div className="hero-stat-num">1,200+</div>
-          <div className="hero-stat-label">Jobs completed</div>
+          <div className="hero-stat-label">Jobben slutförda</div>
         </div>
         <div className="hero-stat">
           <div className="hero-stat-num">4.9★</div>
-          <div className="hero-stat-label">Average rating</div>
+          <div className="hero-stat-label">Genomsnittligt betyg</div>
         </div>
         <div className="hero-stat">
           <div className="hero-stat-num">18</div>
-          <div className="hero-stat-label">Years of trust</div>
+          <div className="hero-stat-label">År av förtroende</div>
         </div>
       </div>
     </section>

@@ -4,18 +4,18 @@ import "./Services.css";
 const services = [
   {
     icon: "fa-wrench",
-    title: "Repairs & Maintenance",
-    desc: "Fix leaks, drips, clogs, and broken fixtures with same-day service.",
+    title: "Reparationer & Underhåll",
+    desc: "Laga läckor, dropp, stopp och trasiga armaturer med service samma dag.",
   },
   {
     icon: "fa-pipe",
-    title: "Drain & Sewer Cleaning",
-    desc: "Hydro-jetting, camera inspections, and rooter services for clear pipes.",
+    title: "Avloppsrensning",
+    desc: "Hydrojetting, kamerainspektioner och rotborttagning för rena rör.",
   },
   {
     icon: "fa-shower",
-    title: "Bathroom & Kitchen Plumbing",
-    desc: "Installation of sinks, faucets, water heaters, and full remodels.",
+    title: "Badrums- och köksrör",
+    desc: "Installation av handfat, kranar, varmvattenberedare och fullständiga renoveringar.",
   },
 ];
 
@@ -24,15 +24,15 @@ const Services = () => {
     <section className="services" id="services">
       <div className="container">
         <div className="services-header">
-          <span className="eyebrow">What we do</span>
+          <span className="eyebrow">Vad vi gör</span>
           <h2>
-            Plumbing with heart,
+            VVS med hjärta,
             <br />
-            service with skill
+            service med skicklighet
           </h2>
           <p style={{ color: "#6B5D52" }}>
-            From minor fixes to major installations — we treat your home like
-            our own, with quality work and clear communication.
+            Från mindre reparationer till större installationer – vi behandlar ditt hem som vårt eget,
+            med kvalitetsarbete och tydlig kommunikation.
           </p>
         </div>
         <div className="services-grid">
